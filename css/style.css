@@ -40,6 +40,7 @@ a {
     margin: 0 auto;
 }
 
+/*navbar*/
 .header {
     background-color: var(--card-bg);
     padding: 1.2rem 0;
@@ -87,3 +88,122 @@ a {
 .nav-links a.active {
     color: var(--accent-color);
 }
+
+
+/*home content*/
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: calc(100vh - 80px);
+    gap: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.greeting {
+    color: var(--accent-color);
+    font-family: var(--hd-text);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.name {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 500px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-primary {
+    background-color: transparent;
+    color: var(--hd-text);
+    border: none;
+    padding: 0.2rem 0.5rem;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--hd-text);
+    border: 2px solid var(--para-text);
+    border-radius: 5px;
+    padding: 0.2rem 0.5rem;
+}
+
+.btn-outline:hover, .btn-primary:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.hero-visual {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.terminal {
+    width: 100%;
+    max-width: 450px;
+    background-color: #0b0f19;
+    border-radius: 10px;
+    border: 1px solid #1E293B;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.terminal-header {
+    background-color: #1E293B;
+    padding: 10px 15px;
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.dot.red { background-color: #EF4444; }
+.dot.yellow { background-color: #F59E0B; }
+.dot.green { background-color: #10B981; }
+
+.terminal-body {
+    padding: 20px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 0.95rem;
+    color: var(--para-text);
+}
+
+.path {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.output {
+    color: #F8FAFC;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.blink {
+    animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+    50% { opacity: 0; }
+}
+
