@@ -390,3 +390,116 @@ main {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(14, 165, 233, 0.2);
 }
+
+/*project pages*/
+.projects-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: 100%;
+}
+
+.projects-intro p {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    max-width: 600px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+}
+
+.project-card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #334155;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-color);
+    box-shadow: 0 15px 30px rgba(14, 165, 233, 0.15);
+}
+
+.project-visual {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #334155;
+}
+
+.pattern-1 { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); }
+.pattern-2 { background: linear-gradient(135deg, #0f172a 0%, #312e81 100%); }
+.pattern-3 { background: linear-gradient(135deg, #0f172a 0%, #064e3b 100%); }
+
+.visual-icon {
+    font-family: var(--space-grotesk);
+    font-size: 5rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .visual-icon {
+    color: rgba(14, 165, 233, 0.4);
+    transform: scale(1.1);
+}
+
+.project-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.project-title {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.project-desc {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.tag {
+    font-family: var(--space-grotesk);
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    background-color: var(--main-bg);
+    color: var(--accent-color);
+    border-radius: 4px;
+    border: 1px solid #334155;
+}
+
+.project-links {
+    margin-top: auto;
+    display: flex;
+    gap: 1.5rem;
+    border-top: 1px solid #334155;
+    padding-top: 1rem;
+}
+
+.link-source {
+    font-family: var(--space-grotesk);
+    font-size: 0.9rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.link-source { color: var(--para-text); }
+
+.link-source:hover { color: var(--hd-text); }
