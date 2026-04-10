@@ -1,4 +1,5 @@
 :root {
+    --main-bg: #0F172A;
     --card-bg: #1E293B;
     --hd-text: #F8FAFC;
     --para-text: #94A3B8;
@@ -15,7 +16,7 @@
 }
 
 body {
-    background-color: #0F172A;
+    background-color: var(--main-bg);
     color: var(--para-text);
     font-family: var(--inter);
     line-height: 1.6;
@@ -215,13 +216,6 @@ main {
 
 
 /*footer*/
-.footer {
-    background-color: var(--card-bg);
-    padding: 2rem 0;
-    margin-top: auto;
-    border-top: 1px solid #334155;
-}
-
 .footer-content {
     display: flex;
     justify-content: space-between;
@@ -334,4 +328,65 @@ main {
 .timeline-item:hover .timeline-dot {
     background-color: var(--accent-color);
     box-shadow: 0 0 10px var(--accent-color);
+}
+
+
+/*skills page*/
+.skills-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: 100%;
+}
+
+.skills-intro p {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    max-width: 600px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.skill-category {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.category-title {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dashed #334155;
+    color: var(--hd-text);
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill-pill {
+    background-color: var(--main-bg);
+    color: var(--para-text);
+    font-family: var(--space-grotesk);
+    font-size: 0.95rem;
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 1px solid #334155;
+    transition: all 0.3s ease;
+    cursor: default; 
+}
+
+.skill-pill:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(14, 165, 233, 0.2);
 }
