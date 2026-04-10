@@ -256,3 +256,82 @@ main {
     color: var(--accent-color);
     text-shadow: 0 0 8px var(--accent-color);
 }
+
+/*about page*/
+.about-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    max-width: 800px;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-intro p {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+.timeline-container {
+    margin-top: 3rem;
+}
+
+.timeline-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--hd-text);
+}
+
+.timeline {
+    border-left: 2px solid #334155;
+    padding-left: 2rem;
+    margin-left: 10px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    transition: all 0.3s ease;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -42px;
+    top: 1.5rem;
+    width: 16px;
+    height: 16px;
+    background-color: #0F172A;
+    border: 3px solid var(--accent-color);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.timeline-date {
+    color: var(--accent-color);
+    font-family: var(--hd-text);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-item:hover {
+    border-color: var(--accent-color);
+    transform: translateX(10px);
+    box-shadow: 0 5px 15px rgba(14, 165, 233, 0.1);
+}
+
+.timeline-item:hover .timeline-dot {
+    background-color: var(--accent-color);
+    box-shadow: 0 0 10px var(--accent-color);
+}
